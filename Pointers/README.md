@@ -122,6 +122,39 @@ A **pointer** in C is a variable that stores the **memory address** of another v
    *ptr = 10; // Dangerous: wild pointer usage
    ```
 
+5. **Constant Pointers**
+   1. **Pointer to a Constant Value**:
+      - Syntax: `const int *ptr;`
+      - Here, `ptr` is a pointer to an `int` that cannot be modified through `ptr`. You can still change `ptr` to point to another address, but you cannot change the value at the address it points to.
+      - Example:
+        ```c
+        const int a = 10;
+        const int *ptr = &a;
+        // *ptr = 20; // Error: Cannot modify the value pointed to by ptr
+        ```
+
+   2. **Constant Pointer to a Value**:
+      - Syntax: `int *const ptr;`
+      - In this case, `ptr` is a constant pointer, meaning the pointer itself cannot be changed to point to a different address, but you can modify the value at that address.
+      - Example:
+        ```c
+        int b = 20;
+        int *const ptr = &b;
+        *ptr = 30; // Valid: Modify the value pointed to by ptr
+        // ptr = &c; // Error: Cannot change the address that ptr points to
+        ```
+
+   3. **Constant Pointer to a Constant Value**:
+      - Syntax: `const int *const ptr;`
+      - This combines both concepts: `ptr` cannot be modified to point to a different address, and the value at that address cannot be modified through `ptr`.
+      - Example:
+        ```c
+        const int c = 40;
+        const int *const ptr = &c;
+        // *ptr = 50; // Error: Cannot modify the value
+        // ptr = &b; // Error: Cannot change the address that ptr points to
+        ```
+
 ## Pointers and Arrays
 
 1. **Arrays and Pointers Relationship**:
