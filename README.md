@@ -10,6 +10,7 @@ This repository contains implementations and explanations of various data struct
 - [Structures](./Structures/README.md)
 - [File Handling](./File-handling/README.md)
 - [Unions](./Unions/README.md)
+- [Static](./Static/README.md)
 
 
 Each link above will take you to the respective sub-README file for more detailed information on that topic.
