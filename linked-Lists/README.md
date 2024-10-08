@@ -12,6 +12,7 @@
 - [5. **Disadvantages of Linked Lists**](#5-disadvantages-of-linked-lists)
 - [6. **Example of a Singly Linked List in C**](#6-example-of-a-singly-linked-list-in-c)
 - [Summary](#summary)
+- [References](#references)
 
 Linked lists are a fundamental data structure in C and many other programming languages. They allow you to dynamically manage collections of data by linking elements together, unlike arrays, which have a fixed size. Let’s explore the basics, types, and operations of linked lists, as well as some advantages and disadvantages.
 
@@ -162,3 +163,6 @@ int main() {
 
 ## Summary
 Linked lists are a versatile data structure that offers dynamic memory allocation, allowing easy insertion and deletion of nodes. They are particularly useful when you need a flexible data structure where the size may change over time. Understanding linked lists is fundamental for learning more complex data structures like stacks, queues, and graphs.
+
+## References
+* [Geeksforgeeks](https://www.geeksforgeeks.org/linked-list-in-c/)
