@@ -1,16 +1,31 @@
+- [1. **What is a Linked List?**](#1-what-is-a-linked-list)
+- [2. **Types of Linked Lists**](#2-types-of-linked-lists)
+  - [a. **Singly Linked List**](#a-singly-linked-list)
+  - [b. **Doubly Linked List**](#b-doubly-linked-list)
+  - [c. **Circular Linked List**](#c-circular-linked-list)
+- [3. **Basic Operations on Linked Lists**](#3-basic-operations-on-linked-lists)
+  - [a. **Insertion**](#a-insertion)
+  - [b. **Deletion**](#b-deletion)
+  - [c. **Traversal**](#c-traversal)
+  - [d. **Searching**](#d-searching)
+- [4. **Advantages of Linked Lists**](#4-advantages-of-linked-lists)
+- [5. **Disadvantages of Linked Lists**](#5-disadvantages-of-linked-lists)
+- [6. **Example of a Singly Linked List in C**](#6-example-of-a-singly-linked-list-in-c)
+- [Summary](#summary)
+
 Linked lists are a fundamental data structure in C and many other programming languages. They allow you to dynamically manage collections of data by linking elements together, unlike arrays, which have a fixed size. Let’s explore the basics, types, and operations of linked lists, as well as some advantages and disadvantages.
 
-### 1. **What is a Linked List?**
+## 1. **What is a Linked List?**
 A **linked list** is a linear data structure where each element, called a **node**, contains a **data part** and a **pointer** (or link) that points to the next node in the sequence. Unlike arrays, linked lists don’t store elements in contiguous memory locations. Instead, they are made up of nodes scattered across memory, with pointers connecting them in a sequence.
 
 Each node generally has two parts:
 - **Data**: Stores the value or information.
 - **Pointer**: Points to the next node in the list.
 
-### 2. **Types of Linked Lists**
+## 2. **Types of Linked Lists**
 Linked lists come in various forms depending on the number of pointers in each node and how nodes are linked. The primary types are:
 
-#### a. **Singly Linked List**
+### a. **Singly Linked List**
    - Each node contains data and a pointer to the next node.
    - The last node has a `NULL` pointer indicating the end of the list.
    - You can traverse it in one direction (from the head to the end).
@@ -21,8 +36,7 @@ Linked lists come in various forms depending on the number of pointers in each n
        struct Node* next;
    };
    ```
-
-#### b. **Doubly Linked List**
+### b. **Doubly Linked List**
    - Each node has three parts: data, a pointer to the next node, and a pointer to the previous node.
    - Allows traversal in both directions (from head to tail and vice versa).
 
@@ -34,7 +48,7 @@ Linked lists come in various forms depending on the number of pointers in each n
    };
    ```
 
-#### c. **Circular Linked List**
+### c. **Circular Linked List**
    - The last node points back to the first node, forming a circular structure.
    - This can be singly or doubly linked.
    - Useful for implementing cyclic structures like round-robin scheduling.
@@ -46,20 +60,20 @@ Linked lists come in various forms depending on the number of pointers in each n
    };
    ```
 
-### 3. **Basic Operations on Linked Lists**
+## 3. **Basic Operations on Linked Lists**
 Here’s an overview of common operations you can perform on linked lists:
 
-#### a. **Insertion**
+### a. **Insertion**
    - **At the Beginning**: Insert a new node at the start and update the head pointer.
    - **At the End**: Traverse to the end and add the new node there.
    - **At a Specific Position**: Traverse to the desired position and adjust pointers to insert the node.
 
-#### b. **Deletion**
+### b. **Deletion**
    - **At the Beginning**: Remove the head node and update the head pointer to the next node.
    - **At the End**: Traverse to the second-to-last node, remove the last node, and update the `next` pointer to `NULL`.
    - **At a Specific Position**: Traverse to the node just before the one you want to delete and adjust the pointers to skip over it.
 
-#### c. **Traversal**
+### c. **Traversal**
    - Start from the head node and visit each node by following the pointers until you reach `NULL`.
 
    ```c
@@ -73,20 +87,20 @@ Here’s an overview of common operations you can perform on linked lists:
    }
    ```
 
-#### d. **Searching**
+### d. **Searching**
    - Traverse through each node until you find the desired value or reach the end of the list.
 
-### 4. **Advantages of Linked Lists**
+## 4. **Advantages of Linked Lists**
    - **Dynamic Size**: Unlike arrays, linked lists can grow or shrink in size as needed, making them ideal for dynamic memory allocation.
    - **Efficient Insertions/Deletions**: You can insert or delete nodes in a linked list with fewer operations than in an array, where shifting elements may be required.
    - **No Wasted Memory**: Linked lists only use as much memory as they need for the nodes, while arrays may have unused space if they’re not fully populated.
 
-### 5. **Disadvantages of Linked Lists**
+## 5. **Disadvantages of Linked Lists**
    - **Memory Overhead**: Each node requires extra memory for the pointer(s), which can add up, especially with large lists.
    - **No Direct Access**: Accessing an element requires traversal from the head node, making linked lists slower than arrays for random access.
    - **More Complex Code**: Linked lists are harder to implement and manage than arrays, requiring more careful handling of pointers.
 
-### 6. **Example of a Singly Linked List in C**
+## 6. **Example of a Singly Linked List in C**
 Here’s an example of how you might implement a simple singly linked list with insertion and traversal in C:
 
 ```c
@@ -146,5 +160,5 @@ int main() {
 }
 ```
 
-### Summary
+## Summary
 Linked lists are a versatile data structure that offers dynamic memory allocation, allowing easy insertion and deletion of nodes. They are particularly useful when you need a flexible data structure where the size may change over time. Understanding linked lists is fundamental for learning more complex data structures like stacks, queues, and graphs.
