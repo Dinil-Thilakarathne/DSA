@@ -31,6 +31,7 @@ Each node generally has two parts:
 - **Pointer**: Points to the next node in the list.
 
 ![alt text](image.png)
+
 A linked list starts with a head node which points to the first node. Every node consists of data which holds the actual data (value) associated with the node and a next pointer which holds the memory address of the next node in the linked list. The last node is called the tail node in the list which points to null indicating the end of the list.
 
 # 2. **Types of Linked Lists**
