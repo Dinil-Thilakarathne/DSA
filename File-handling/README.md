@@ -270,4 +270,3 @@ Here, the `while` loop continues reading characters from the file until `fgetc()
 
 ---
 
-Would you like to explore more specific file handling topics, such as working with **random access files**, **file locking**, or something else?

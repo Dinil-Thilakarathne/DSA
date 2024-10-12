@@ -3,7 +3,9 @@
 This repository contains implementations and explanations of various data structures and algorithms.
 
 ## Table of Contents
-
+- Algorithms
+  - [Searching Algorithm](algorithms/searching/README.md)
+  - [Sorting Algorithm](algorithms/sorting/README.md)
 - [Arrays](./Arrays/README.md)
 - [Pointer](./Pointers/README.md)
 - [Strings](./Strings/README.md)
