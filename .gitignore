@@ -2,3 +2,6 @@
 .test
 .vscode
 *.out
+.ps
+.implementation
+*.zip
