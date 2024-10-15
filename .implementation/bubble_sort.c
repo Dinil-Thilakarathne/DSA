@@ -1,17 +1,6 @@
 #include <stdio.h>
 #include "utils.h"
 
-/**
- * @brief Sorts an integer array in ascending order using the bubble sort algorithm.
- *
- * This function implements the bubble sort algorithm to sort an array of integers.
- * It repeatedly steps through the list, compares adjacent elements and swaps them
- * if they are in the wrong order. The pass through the list is repeated until the
- * array is sorted.
- *
- * @param array The integer array to be sorted.
- * @param size The number of elements in the array.
- */
 
 // normal bubble sort
 void bubble_sort(int array[], int size)
@@ -26,7 +15,6 @@ void bubble_sort(int array[], int size)
                 swap(&array[j], &array[j+1]);
             }
         }
-
     }
 
 }
