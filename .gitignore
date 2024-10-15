@@ -3,5 +3,6 @@
 .vscode
 *.out
 .ps
-.implementation
+# .implementation
 *.zip
+*.rar
