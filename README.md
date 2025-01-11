@@ -17,5 +17,3 @@ This repository contains implementations and explanations of various data struct
 - [Dynamic Memory](./Dynamic-memory/README.md)
 
 
-Each link above will take you to the respective sub-README file for more detailed information on that topic.
-
