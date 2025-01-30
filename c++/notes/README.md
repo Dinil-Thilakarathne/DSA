@@ -1,5 +1,6 @@
 # Table of Contents
 
+- [Object Oriented Paradigm](./Object_oriented_paradigm.md)
 - [C++ Classes](./classes.md)
 - [C++ Constructors and Destructors](./constructors_and_destructors.md)
 - [C++ Copy Constructors](./Copy_Constructor.md)
