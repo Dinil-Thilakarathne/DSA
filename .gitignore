@@ -7,3 +7,5 @@
 *.zip
 *.rar
 *.exe
+makefile
+*.sh
