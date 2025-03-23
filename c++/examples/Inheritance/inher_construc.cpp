@@ -14,6 +14,9 @@ public:
 class Derived : public Base {
     using Base::Base; // Inheriting Base class constructors
     public:
+        Derived() {
+            cout << "Derived class default constructor called" << endl;
+        }
         Derived(int x)  {
             cout << "Derived class constructor called" << endl;
         }
