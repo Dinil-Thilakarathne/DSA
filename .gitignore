@@ -9,3 +9,4 @@
 *.exe
 makefile
 *.sh
+/os
