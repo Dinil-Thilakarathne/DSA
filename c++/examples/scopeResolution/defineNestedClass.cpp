@@ -29,7 +29,7 @@ class Outside{
 int main()
 {
     Outside A;
-    // Outside::Inside B;
-    // cout<<B.foo()<<endl;
+    Outside::Inside B;
+    cout<<B.foo()<<endl;
     // cout<<B.y<<endl;
 }

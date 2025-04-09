@@ -10,7 +10,7 @@ class Counter {
 
         // Overload prefix ++ operator as a member function
         Counter& operator++() {
-            ++value; // Increment the value
+            value++; // Increment the value
             return *this;
         }
 
